@@ -1,0 +1,421 @@
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('polices/CaviarDreams-webfont.eot');
+    src: url('polices/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/CaviarDreams-webfont.woff2') format('woff2'),
+         url('polices/CaviarDreams-webfont.woff') format('woff'),
+         url('polices/CaviarDreams-webfont.ttf') format('truetype'),
+         url('polices/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'berkshire_swashregular';
+    src: url('polices/berkshireswash-regular-webfont.eot');
+    src: url('polices/berkshireswash-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/berkshireswash-regular-webfont.woff2') format('woff2'),
+         url('polices/berkshireswash-regular-webfont.woff') format('woff'),
+         url('polices/berkshireswash-regular-webfont.ttf') format('truetype'),
+         url('polices/berkshireswash-regular-webfont.svg#berkshire_swashregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* reset css */
+body{margin:0;}
+
+
+
+#bloc_page
+{
+	display:flex;
+	margin: auto;
+	background-color: #E0F7FA;
+	padding-right: 2.5em;
+}
+h4
+{
+	margin-top: 0;
+	color: #007FC1;
+}
+
+header
+{
+	display: flex;
+}
+
+.titres
+{
+	display: flex;
+	flex-direction: column;
+}
+
+header h1
+{
+	font-family: 'caviar_dreamsregular', serif;
+	font-size: 3.5em;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-left: 3em;
+}
+
+h1 span
+{
+	color: #007FC1;
+}
+
+header h2
+{
+	font-family: 'caviar_dreamsregular', serif;
+	margin-left: 5.5em;
+	font-size: 2em;
+}
+
+h2 span
+{
+	text-decoration: underline;
+	text-decoration-color: #007FC1;
+	text-underline-position: under;
+}
+#bloc_a_propos
+{
+	font-family: 'caviar_dreamsregular';
+	display: flex;
+	flex-direction: column;
+	background-color: #008A9F;
+	width: 25%;
+	word-wrap: break-word;
+}
+.photo
+{
+	display: flex;
+	justify-content: center;
+}
+img
+{
+	display: flex;
+	border: 3px solid #333333;
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+	margin-top: 3em;
+	margin-bottom: 8px;
+}
+
+#contacts
+{
+	font-size: 1.2em;
+}
+
+.contact
+{
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+a
+{
+	color: #000099;
+}
+
+a:visited
+{
+	color: #333333;
+}
+
+.texte
+{
+	text-align: justify;
+	font-size: 1.2em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.titre_gauche
+{
+	font-family: 'berkshire_swashregular'; 
+	text-align: center;
+	background-color: #333333;
+	color: #008A9F;
+	font-size: 2em;
+}
+
+#loisirs
+{
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: 20px;
+}
+
+#icons
+{
+	display: flex;
+	justify-content: center;
+}
+.icon
+{
+	display: flex;
+	margin-right: 2em;
+	border: 2px solid black;
+	border-radius: 50%;
+	padding: 0.5em;
+}
+article
+{
+	font-family: 'caviar_dreamsregular';
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+article p
+{
+	font-size: 1.2em;
+}
+
+.experiences
+{
+	display: flex;
+	flex-flow: column wrap;
+}
+.logo
+{
+	margin-right: 2em;
+	color: #007FC1;
+
+}
+
+.une_experience
+{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2em;
+}
+
+.experience_date
+{
+	width: 20%;
+	display: flex;
+	color: #007FC1;
+}
+
+.experience_contenu
+{
+	width: 50%;
+}
+
+.formations
+{
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.une_formation
+{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2em;
+}
+
+.formation_date
+{
+	width: 20%;
+	display: flex;
+	color: #007FC1;
+}
+
+.date
+{
+	margin-left: 2.5em;
+	font-weight: bold;
+	color: black;
+	font-size: 1.2em;
+}
+.formation_contenu
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+section
+{
+	font-family: 'caviar_dreamsregular';
+	position: relative;
+}
+
+
+article h2
+{
+	font-family: 'berkshire_swashregular';
+	text-align: justify;
+	border-bottom: 2px solid #007FC1;
+	margin-top: 5%;
+	margin-left: 2.5em;
+	font-size: 3em;
+}
+
+article h4
+{
+	font-size: 2em;
+}
+
+article h5
+{
+	font-size: 1.6em;
+}
+
+.recommandations
+{
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.mes_recommandations
+{
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+@media all and (max-width: 1024px)
+{
+	aside
+	{
+		width: auto;
+	}
+
+	#bloc_a_propos
+	{
+		display: block;
+		word-wrap: break-word;
+		width: auto;
+		order: 2;
+		margin-top: 30px;
+	}
+
+	.titre_gauche
+	{
+		font-size: 1.8em;
+	}
+
+	article
+	{
+		display: block;
+		width: auto;
+		order: 1;
+	}
+
+	article p
+	{
+		font-size: 1em;
+	}
+
+	article h2
+	{
+		margin-left: 1em;
+		font-size: 1.9em;
+	}
+
+	article h4
+	{
+		font-size: 1.4em;
+	}
+
+	article h5
+	{
+		font-size: 1.3em;
+	}
+
+	.logo
+	{
+		margin-right: 1em;
+	}
+
+	.date
+	{
+		font-size: 0.9em;
+	}
+
+	#bloc_page
+	{
+		width: auto;
+		flex-direction: column;
+		padding-right: 0em;
+	}
+
+	header
+	{
+		display: block;
+		width: auto;
+	}
+
+	header h1
+	{
+		font-size: 3em;
+	}
+
+	header h2
+	{
+		font-size: 1.7em;
+	}
+
+	.recommandation1
+	{
+		margin-left: 2em;
+		margin-right: 2em;
+		font-size: 0.9em;
+	}
+
+	.recommandation2
+	{
+		margin-left: 2em;
+		margin-right: 2em;
+		font-size: 0.9em;
+	}
+
+@media all and (max-width: 500px)
+{
+	header h1
+	{
+		font-size: 2.5em;
+	}
+
+	header h2
+	{
+		font-size: 1.4em;
+	}
+
+	article p
+	{
+		font-size: 0.9em;
+	}
+
+	article h2
+	{
+		font-size: 1.3em;
+	}
+
+	article h4
+	{
+		font-size: 1.1em;
+	}
+
+	article h5
+	{
+		font-size: 1em;
+	}
+
+	.titre_gauche
+	{
+		font-size: 1.3em;
+	}
+
+	.mes_recommandations
+	{
+		display: block;
+	}
+}
+
