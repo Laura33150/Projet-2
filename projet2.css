@@ -2,7 +2,6 @@
     font-family: 'caviar_dreamsregular';
     src: url('polices/CaviarDreams-webfont.eot');
     src: url('polices/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
-         url('polices/CaviarDreams-webfont.woff2') format('woff2'),
          url('polices/CaviarDreams-webfont.woff') format('woff'),
          url('polices/CaviarDreams-webfont.ttf') format('truetype'),
          url('polices/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
@@ -14,7 +13,6 @@
     font-family: 'berkshire_swashregular';
     src: url('polices/berkshireswash-regular-webfont.eot');
     src: url('polices/berkshireswash-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('polices/berkshireswash-regular-webfont.woff2') format('woff2'),
          url('polices/berkshireswash-regular-webfont.woff') format('woff'),
          url('polices/berkshireswash-regular-webfont.ttf') format('truetype'),
          url('polices/berkshireswash-regular-webfont.svg#berkshire_swashregular') format('svg');
@@ -24,9 +22,11 @@
 }
 
 /* reset css */
-body{margin:0;}
-
-
+body
+{
+	margin:0;
+	font-family: 'caviar_dreamsregular', serif;
+}
 
 #bloc_page
 {
@@ -35,6 +35,7 @@ body{margin:0;}
 	background-color: #E0F7FA;
 	padding-right: 2.5em;
 }
+
 h4
 {
 	margin-top: 0;
@@ -54,7 +55,6 @@ header
 
 header h1
 {
-	font-family: 'caviar_dreamsregular', serif;
 	font-size: 3.5em;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -68,7 +68,6 @@ h1 span
 
 header h2
 {
-	font-family: 'caviar_dreamsregular', serif;
 	margin-left: 5.5em;
 	font-size: 2em;
 }
@@ -79,20 +78,22 @@ h2 span
 	text-decoration-color: #007FC1;
 	text-underline-position: under;
 }
+
 #bloc_a_propos
 {
-	font-family: 'caviar_dreamsregular';
 	display: flex;
 	flex-direction: column;
 	background-color: #008A9F;
 	width: 25%;
 	word-wrap: break-word;
 }
+
 .photo
 {
 	display: flex;
 	justify-content: center;
 }
+
 img
 {
 	display: flex;
@@ -135,7 +136,7 @@ a:visited
 
 .titre_gauche
 {
-	font-family: 'berkshire_swashregular'; 
+	font-family: 'berkshire_swashregular',serif; 
 	text-align: center;
 	background-color: #333333;
 	color: #008A9F;
@@ -154,6 +155,7 @@ a:visited
 	display: flex;
 	justify-content: center;
 }
+
 .icon
 {
 	display: flex;
@@ -162,9 +164,9 @@ a:visited
 	border-radius: 50%;
 	padding: 0.5em;
 }
+
 article
 {
-	font-family: 'caviar_dreamsregular';
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -175,11 +177,12 @@ article p
 	font-size: 1.2em;
 }
 
-.experiences
+.experiences, .formations, .recommandations
 {
 	display: flex;
 	flex-flow: column wrap;
 }
+
 .logo
 {
 	margin-right: 2em;
@@ -187,43 +190,23 @@ article p
 
 }
 
-.une_experience
+.une_experience, .une_formation
 {
 	display: flex;
 	justify-content: space-around;
 	margin-top: 2em;
 }
 
-.experience_date
+.experience_date, .formation_date
 {
 	width: 20%;
 	display: flex;
 	color: #007FC1;
 }
 
-.experience_contenu
+.experience_contenu, .formation_contenu
 {
 	width: 50%;
-}
-
-.formations
-{
-	display: flex;
-	flex-flow: column wrap;
-}
-
-.une_formation
-{
-	display: flex;
-	justify-content: space-around;
-	margin-top: 2em;
-}
-
-.formation_date
-{
-	width: 20%;
-	display: flex;
-	color: #007FC1;
 }
 
 .date
@@ -233,22 +216,16 @@ article p
 	color: black;
 	font-size: 1.2em;
 }
-.formation_contenu
-{
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-}
+
 section
 {
-	font-family: 'caviar_dreamsregular';
 	position: relative;
 }
 
 
 article h2
 {
-	font-family: 'berkshire_swashregular';
+	font-family: 'berkshire_swashregular',serif;
 	text-align: justify;
 	border-bottom: 2px solid #007FC1;
 	margin-top: 5%;
@@ -264,12 +241,6 @@ article h4
 article h5
 {
 	font-size: 1.6em;
-}
-
-.recommandations
-{
-	display: flex;
-	flex-flow: column wrap;
 }
 
 .mes_recommandations
@@ -363,19 +334,13 @@ article h5
 		font-size: 1.7em;
 	}
 
-	.recommandation1
+	.recommandation1, .recommandation2
 	{
 		margin-left: 2em;
 		margin-right: 2em;
 		font-size: 0.9em;
 	}
 
-	.recommandation2
-	{
-		margin-left: 2em;
-		margin-right: 2em;
-		font-size: 0.9em;
-	}
 
 @media all and (max-width: 500px)
 {
@@ -418,5 +383,6 @@ article h5
 	{
 		display: block;
 	}
+	
 }
 
