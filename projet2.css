@@ -340,7 +340,7 @@ article h5
 		margin-right: 2em;
 		font-size: 0.9em;
 	}
-
+}
 
 @media all and (max-width: 500px)
 {
@@ -379,10 +379,23 @@ article h5
 		font-size: 1.3em;
 	}
 
+	.une_experience, .une_formation
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-left: 160px;
+	}
+
+	.experience_date, .formation_date
+	{
+		margin-bottom: 15px;
+	}
+
 	.mes_recommandations
 	{
 		display: block;
+		text-align: center;
 	}
-	
 }
 
