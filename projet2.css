@@ -347,11 +347,13 @@ article h5
 	header h1
 	{
 		font-size: 2.5em;
+		margin-left: 2em;
 	}
 
 	header h2
 	{
 		font-size: 1.4em;
+		margin-left: 3.5em;
 	}
 
 	article p
@@ -382,9 +384,6 @@ article h5
 	.une_experience, .une_formation
 	{
 		display: flex;
-		flex-direction: column;
-		text-align: center;
-		margin-left: 160px;
 	}
 
 	.experience_date, .formation_date
@@ -392,10 +391,23 @@ article h5
 		margin-bottom: 15px;
 	}
 
+	.experience_contenu, .formation_contenu
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
 	.mes_recommandations
 	{
 		display: block;
 		text-align: center;
 	}
+
+	.date
+	{
+		margin-left: 1em;
+		margin-right: 2.5em;
+	}
+
 }
 
